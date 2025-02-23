@@ -11,6 +11,7 @@ int maxSum_kadanesAlgo(vector<int> v){
     int sum = 0;
     int n = v.size();
 
+    //carry the sum forward if it is greater than 0
     for(int i = 0;i<n;i++){
         if(sum+v[i] > 0){
             sum = sum + v[i];
